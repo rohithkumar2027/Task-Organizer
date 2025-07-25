@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task Planner</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+     <h1>Weekly Schedule Planner</h1>
+
+    <nav class="navbar">
+
+      <button id="dark-mode-toggle" class="toggle-dark">🌙</button>
+
+
+      <button id="repeat-daily-btn">Repeats</button>
+      <button
+        id="delete-repeats-btn"
+        style="
+          background-color: #ef4444;
+          color: white;
+          border: none;
+          border-radius: 8px;
+          padding: 8px 12px;
+          cursor: pointer;
+        "
+      >
+        Delete Repeats
+      </button>
+
+      <div class="nav-center" id="date-selector">
+        <label for="month-select">Month:</label>
+        <select id="month-select"></select>
+        <label for="year-select">Year:</label>
+        <select id="year-select"></select>
+      </div>
+      <div class="nav-right table-controls">
+        <button id="prev-week-btn">← Previous</button>
+        <button id="next-week-btn">Next →</button>
+      </div>
+
+      <button id="clear-week-btn" style="background-color: #f97316; color: white;">Clear Week</button>
+
+      <div id="month-summary" style="font-weight: bold; margin-top: 8px; color: #2563eb">
+
+      </div>
+
+    </nav>
+
+    <div id="table-container"></div>
+
+    <script src="script.js"></script>
+</body>
+</html> 

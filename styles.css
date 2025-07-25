@@ -1,0 +1,217 @@
+* {
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Segoe UI", sans-serif;
+        margin: 0;
+        padding: 20px;
+        background: #f5f6fa;
+        color: #333;
+      }
+
+      h1 {
+        text-align: center;
+        color: #2563eb;
+        margin-bottom: 20px;
+        font-size: 1.75rem;
+      }
+
+      #date-selector,.table-controls {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+        margin-bottom: 16px;
+      }
+
+      select,input[type="time"],button {
+        padding: 8px 12px;
+        font-size: 1rem;
+        border: 1px solid #d1d5db;
+        border-radius: 8px;
+        background-color: #fff;
+        transition: 0.2s ease;
+      }
+
+      button {
+        cursor: pointer;
+      }
+
+      button:hover {
+        background-color: #2563eb;
+        color: white;
+        border-color: #2563eb;
+      }
+
+      #table-container {
+        overflow-x: auto;
+        margin-top: 10px;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        background: white;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+      }
+
+      th {
+        background-color: #2563eb;
+        color: white;
+        text-align: center;
+        padding: 10px;
+        font-weight: 600;
+        font-size: 0.95rem;
+      }
+
+      td,th {
+        border: 1px solid #e5e7eb;
+        padding: 10px;
+        min-width: 150px;
+        text-align: center;
+        white-space: nowrap; /* Prevent wrapping */
+      }
+
+      td {
+        background-color: #ffffff;
+      }
+
+      tr:nth-child(even) td {
+        background-color: #f0f4fa;
+      }
+
+      .time-col {
+        background-color: #e0e7f0;
+        font-weight: bold;
+        min-width: 140px;
+        white-space: nowrap;
+      }
+
+      td[contenteditable="true"] {
+        cursor: text;
+        transition: background-color 0.3s;
+      }
+
+      td[contenteditable="true"]:focus {
+        background-color: #e3f2fd;
+        outline: 2px solid #60a5fa;
+        outline-offset: -2px;
+      }
+
+      button.toggle-dark {
+        padding: 8px 10px;
+        font-size: 1rem;
+        background: white;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        transition: 0.3s;
+      }
+
+      button.toggle-dark:hover {
+        background: #333;
+        color: white;
+      }
+      body.dark-mode {
+        background: #1e1e2f;
+        color: #e0e0e0;
+      }
+
+      body.dark-mode table {
+        background: #2c2c3c;
+        color: #f5f5f5;
+      }
+
+      body.dark-mode th {
+        background-color: #374151;
+        color: #fff;
+      }
+
+      body.dark-mode td {
+        background-color: #2c2c3c;
+      }
+
+      body.dark-mode tr:nth-child(even) td {
+        background-color: #3a3a4a;
+      }
+
+      body.dark-mode .time-col {
+        background-color: #3b4252;
+        color: #fff;
+      }
+
+      body.dark-mode td[contenteditable="true"]:focus {
+        background-color: #444c5e;
+        outline-color: #81a1c1;
+      }
+
+      body.dark-mode button {
+        background-color: #444;
+        color: #ddd;
+        border-color: #666;
+      }
+
+      body.dark-mode button:hover {
+        background-color: #555;
+        color: #fff;
+      }
+      
+      .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #ffffff;
+        border-radius: 8px;
+        padding: 10px 16px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+
+      .nav-left,.nav-center,.nav-right {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        flex-wrap: wrap;
+      }
+
+      .navbar label {
+        font-weight: 500;
+      }
+
+      body.dark-mode .navbar {
+        background-color: #2c2c3c;
+        color: white;
+      }
+
+      #repeat-daily-btn {
+        background-color: #10b981; /* green */
+        color: white;
+        border: none;
+        border-radius: 8px;
+        padding: 8px 12px;
+        cursor: pointer;
+      }
+
+      #repeat-daily-btn:hover {
+        background-color: #059669;
+      }
+
+      .repeated-cell {
+        background-color: #fff7cc !important; /* light yellow */
+        font-style: italic;
+      }
+
+      body.dark-mode .repeated-cell {
+        background-color: #665c00 !important; /* darker yellow for dark mode */
+        color: #fff;
+      }
+
+      body.dark-mode select {
+        background-color: #444;
+        color: #fff;
+        border-color: #666;
+      }
