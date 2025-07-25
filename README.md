@@ -1,4 +1,4 @@
-<img width="1916" height="1077" alt="image" src="https://github.com/user-attachments/assets/07eaa5e4-ade1-4c29-9f47-08eb8aad7fa3" /># Task Organizer
+# Task Organizer
 A modern and intuitive task management application to help you stay organized, focused, and productive.
 
 ## 🌟 Features
@@ -11,4 +11,4 @@ A modern and intuitive task management application to help you stay organized, f
 - 📅Can Plan your tasks for years
 
 ## 🖼️ Screenshot
-
+<img width="1916" height="1077" alt="image" src="https://github.com/user-attachments/assets/07eaa5e4-ade1-4c29-9f47-08eb8aad7fa3" />
